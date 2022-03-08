@@ -44,8 +44,10 @@ h2 {
   .carousel-caption h3 {
     margin-top: 50px;
     color: black;
+    font-size: 14px;
+    font-weight: 600;
   }
   .carousel-images {
-    width: 80%;
+    width: 97%;
   }
 }

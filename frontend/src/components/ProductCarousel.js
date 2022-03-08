@@ -25,7 +25,7 @@ function ProductCarousel() {
         <Carousel.Item key={product._id} className="caro-item">
           <Link to={`/product/${product._id}`}>
             <Image
-              className="d-block mx-auto caroursel-images"
+              className="d-block mx-auto carousel-images"
               src={product.image}
               alt={product.name}
             />
