@@ -20,15 +20,19 @@ function ProductCarousel() {
   ) : error ? (
     <Message variant="danger">{error}</Message>
   ) : (
-    <Carousel pause="hover" className="bg-dark">
+    <Carousel pause="hover" className="bg-dark carousel-main">
       {products.map((product) => (
-        <Carousel.Item key={product._id}>
+        <Carousel.Item key={product._id} className="caro-item">
           <Link to={`/product/${product._id}`}>
-            <Image src={product.image} alt={product.name} fluid />
+            <Image
+              className="d-block mx-auto caroursel-images"
+              src={product.image}
+              alt={product.name}
+            />
             <Carousel.Caption className="carousel-caption">
-              <h2>
+              <h3>
                 {product.name} (${product.price})
-              </h2>
+              </h3>
             </Carousel.Caption>
           </Link>
         </Carousel.Item>

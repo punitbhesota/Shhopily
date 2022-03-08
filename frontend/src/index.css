@@ -17,6 +17,7 @@ h2 {
   font-size: 1.4rem;
   padding: 0.5rem 0;
 }
+
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.action {
@@ -26,7 +27,7 @@ h2 {
   position: absolute;
   top: 0;
 }
-.carousel-caption h2 {
+.carousel-caption h3 {
   color: #fff;
 }
 .carousel img {
@@ -38,4 +39,13 @@ h2 {
 
 .carousel a {
   margin: 0 auto;
+}
+@media (max-width: 750px) {
+  .carousel-caption h3 {
+    margin-top: 50px;
+    color: black;
+  }
+  .carousel-images {
+    width: 80%;
+  }
 }
